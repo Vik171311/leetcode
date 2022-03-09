@@ -1,7 +1,8 @@
 #include<stdio.h>
-//#define numSize 7
+//#define numSize 
 
-//Âß¼­ÔËËã·û£¬Òì»ò
+//å¼‚æˆ–ç¬¦
+//A^A=0   A^0=A   A^B=B^A
 int singleNumber1(int* nums, int numsSize) {
     int n = nums[0];
     for (int i = 1; i < numsSize; i++) {
@@ -10,7 +11,7 @@ int singleNumber1(int* nums, int numsSize) {
     return n;
 }
 
-//±©Á¦Çó½â
+//forå¾ªç¯æš´åŠ›ç®—æ³•
 int singleNumber2(int* nums, int numsSize) {
     for (int i = 0; i < numsSize; i++)
     {
